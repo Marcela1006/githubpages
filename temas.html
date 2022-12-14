@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>
+            Aprendo HTML: Flex Box, Listas y Enlaces en HTML.
+        </h1>
+    </header>
+
+    <!--Menu de navegación-->
+
+    <nav class="navegacion">
+        <ul class=" logo">
+            <li><a href="index.html">LastHtml</a></li>
+        </ul>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="temas.html">Temas</a>
+                <ul class="submenu">
+                    <li><a href="temas.html">Flex Box</a></li>
+                    <li><a href="listas.html">listas y enlaces en HTML</a></li>
+                </ul>
+            </li>
+
+            <li><a href="recurso.html">Recursos Digitales </a>
+                <ul class="submenu">
+                    <li><a href="recurso.html">Recurso 1</a></li>
+                    <li><a href="recurso2.html">Recurso 2</a></li>
+                </ul>
+            </li>
+
+            <li><a href="actividad1.html"> Aprendizaje</a>
+                <ul class="submenu">
+                    <li><a href="actividad1.html">Actividad 1</a></li>
+                    <li><a href="actividad2.html">Actividad 2</a></li>
+                </ul>
+            </li>
+
+            <li><a href="aboutme.html"> Acerca de </a></li>
+        <ul>
+    </nav>
+
+    <!--Contenedor de red social-->
+
+    <main class="contenedor">
+
+        <aside class="contenedor_lateral">
+            <a class="twitter-timeline" data-height="3450" data-dnt="true" data-heigh="9000"
+                href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>    
+    
+        <!--Cuerpo y contenido del sitio-->
+
+        <section class="contenedor_principal">
+            <article>
+                <h1>Flex Box</h1><br>
+
+                Flexbox es un módulo de diseño de CSS3 que se creó para mejorar la forma en la que se hace
+                diseño responsive, evitando así el uso de float, escribiendo menos código y facilitando el
+                posicionamiento de elementos, incluso no teniendo noción del tamaño de éstos. Básicamente la
+                idea de Flexbox es poder alterar el ancho, alto y posicionamiento de elementos de la mejor
+                manera con el espacio del que disponemos. <br>
+                <br>
+
+                <img src="img/Flex .png" height="300" width="420" alt="Esta imagen muestra flex box html">
+
+                <p>
+
+                <Br>
+                    <h3> Estructura: </h3>
+                </Br>
+
+                La estructura de Flexbox se compone de contenedores padre e hijos (Contenedor-Flex y Elementos-Flex
+                respectivamente) <br>
+                El Contenedor-Flex es nuestro contenedor padre, y es él quién va a contener a todos los elementos
+                hijos a los cuáles queremos posicionar. <br>
+                El Elemento-Flex es nuestro elemento hijo, el cual utilizará todo el espacio disponible para
+                ubicarse de acuerdo a las propiedades a las cuales este sometido junto a los demás Elementos-Flex
+                contenidos. <br>
+
+                <Br>
+                    <h3>Ejes: Cada diseño "Flexbox" está compuesto por dos ejes.</h3>
+                    <br>
+                    <h4>Un eje principal:</h4>
+                </Br>
+
+                Que define el posicionamiento horizontal de los Elementos-Flex. Está definido por flex-direction,
+                que posee cuatro posibles valores: row, row-reverse, column, column-reverse.
+                Si elegimos row o row-reverse, el eje principal correrá a lo largo de la fila según la dirección de
+                la línea. <br>
+                Al elegir column o column-reverse el eje principal correrá desde el borde superior de la página
+                hasta el final — según la dirección del bloque. <br>
+
+                <Br>
+                    <h4>Un eje secundario:</h4>
+                </Br>
+
+                que define el posicionamiento vertical de los Elementos-Flex. <br>
+
+                <Br>
+                    <h4>Direcciones:</h4>
+                </Br>
+
+                Las partes de inicio principal / fin principal e inicio secundario / fin secundario del Contenedor -
+                Flex definen el origen y final del flujo de elementos - Flex. <br>
+
+                <Br>
+                    <h4>Dimensiones:</h4>
+                </Br>
+
+                Esto equivale a la anchura (tamaño principal) y la altura (tamaño secundario) del elemento - Flex
+                que dependen de eje principal y eje secundario. <br>
+
+                <Br>
+                    <h4>El Contendor-Flex:</h4>
+                </Br>
+
+                contiene direcciones que definen el origen y el fin del flujo de Elementos-Flex:
+                Inicio principal, Fin principal, Inicio secundario, Fin secundario.
+                Cada Elemento-Flex está definido por sus dimensiones, anchura (tamaño principal) y altura (tamaño
+                secundario) que dependen del eje principal y el eje secundario. <br>
+
+                <Br>
+                    <h3>Propiedades del contenedor - flex (Padre)</h3>
+                </Br>
+
+                Si queremos utilizar las propiedades de Flexbox tendremos que definirlo mediante la propiedad
+                display y su valor flex o inline-flex dentro del selector que nosotros definamos que es nuestro
+                elemento padre o Contenedor-Flex. <br>
+                Propiedades del elemento padre con una breve descripción en cada una. <br>
+
+                <Br>
+                    <h4>Flex-direction:</h4>
+                </Br>
+
+                Esta propiedad define las direcciones del eje principal, es decir, hacia donde se moverán los
+                Elementos - Flex, tanto horizontalmente como verticalmente. <br>
+
+                <Br>
+                    <h4>Flex-wrap: </h4>
+                </Br>
+
+                Al manejar Flexbox el concepto inicial es fijar los elementos - flex en una sola línea, pero con la
+                propiedad flex-wrap controlamos si el contenedor flex mueve sus elementos - flex en líneas
+                individuales o múltiples, es una de las cosas más asombrosas de FlexBox, ya que con una simple línea
+                de código nos ahorramos muchos problemas. <br>
+
+                <Br>
+                    <h4>Flex-flow:</h4>
+                </Br>
+
+                Esta propiedad flex-flow es una forma rápida o una opción de atajo para establecer las propiedades
+                individuales flex-direction y flex-wrap. <br>
+
+                <Br>
+                    <h4>Justify-content:</h4>
+                </Br>
+
+                La propiedad justify-content define cómo el navegador distribuye el espacio entre y alrededor de los
+                items flex, a lo largo del eje principal de su contenedor. <br>
+                El alineamiento se produce luego de que las longitudes y márgenes automáticos son aplicados, lo que
+                significa que, si existe al menos un elemento flexible con flex-grow diferente a 0, no tendrá efecto
+                ya que no habrá espacio disponible. <br>
+                Pruebe con los siguientes valores dejustify-content en el ejemplo en vivo: <br>
+                space-evenly, flex-start, flex-end, center, space-around, space-between. <br>
+
+                <Br>
+                    <h4>Align-items:</h4>
+                </Br>
+
+                La propiedad align-items es muy similar a la propiedad justify-content, pero este es en la dirección
+                del eje secundario. <br>
+                El valor inicial para esta propiedad es stretch razón por la cual los ítems se ajustan por defecto a
+                la altura de aquel más alto. En efecto se ajustan para llenar el contenedor flex — el ítem más alto
+                define la altura de este. <br>
+                En cambio, definimos align-items como flex-start para que los ítems se alineen al comienzo del
+                contenedor flex, flex-end para alinearlos al final, o center para alinearlos al centro. <br>
+                Intente esto en el ejemplo en vivo — He definido en el contenedor flex una altura para que se
+                aprecie que se pueden mover libremente dentro del contenedor. Vea lo que sucede si se coloca el
+                valor align-items como: <br>
+                stretch, flex-start, flex-end, center. <br>
+                <Br>
+                    <h4>Align-content:</h4>
+                </Br>
+
+                La propiedad align-content alinea las líneas de un contenedor - flex cuando los elementos no
+                utilizan todo el espacio disponible en el eje secundario. <br>
+                La propiedad align-content ajusta las líneas dentro de un contenedor flex cuando hay espacio extra
+                en el eje transversal. Esta propiedad no tiene efecto en cajas flexibles de una sola línea. <br>
+
+                <Br>
+                    <h3>Propiedades de los elementos - flex (Hijos)</h3> 
+                </Br>
+
+                Al igual que el contenedor - flex, los elementos - flex tienen propiedades interesantes, con las
+                cuales podremos hacer cosas aún más increíbles. <br>
+
+                <Br>
+                    <h4>Order:</h4>
+
+                </Br>
+
+                Con esta propiedad controlamos el orden de los elementos - flex que están dentro del contenedor -
+                flex. Los elementos estarán dispuestos en orden ascendente según el valor de order. Los elementos
+                con el mismo valor de order se dispondrán en el orden en el cual aparecen en el código fuente. <br>
+                <Br>
+                    <h4>Flex-grow:</h4>
+                </Br>
+
+                Esta propiedad especifica el factor que determina hasta qué punto un elemento - flex crecerá en
+                relación con el resto de los elementos - flex. <br>
+
+                <Br>
+                    <h4>Flex-shrink:</h4>
+                </Br>
+
+                La propiedad flex-shrink especifica el factor de contracción de un flex item. Los flex items se
+                encogerán para llenar el contenedor de acuerdo a su número flex-shrink, cuando el tamaño por defecto
+                de los flex items sea mayor al de su contenedor flex container. <br>
+
+                <Br>
+                    <h4>Flex-basis:</h4>
+                </Br>
+
+                Esta propiedad tiene los mismos valores que las propiedades width y height y especifica el tamaño
+                principal del elemento - flex, distribuyéndose de acuerdo con los factores flex. <br>
+
+                <Br>
+                    <h4>Flex:</h4>
+                </Br>
+
+                Con esta propiedad solo es la abreviatura de flex-grow, flex-shrink y flex-basis. Entre otros
+                valores que también se pueden configurar para auto (1 1 auto) y none (0 0 auto ). <br>
+
+                <Br>
+                    <h4>Align-self:</h4>
+                </Br>
+
+                Esta propiedad permite la alineación por defecto (o la especifica por align-items) para ser anulados
+                por elementos - flex individuales. <br>
+
+                </p>
+                <Br>
+                </Br>
+
+                <p>
+
+                    <span class="enfatizado"> <h1>Referencias:</h1> 
+                        
+                        <Br>
+                            Santillán, F (n.d) El gran poder de CSS3: FlexBox. 21. May.2015, from:
+                            https://filisantillan.com/blog/el-gran-poder-de-css3-flexbox/
+                        </Br>
+                        </envergadura>
+
+                </p>
+
+            </article>
+        </section>
+    </main>
+
+    <!--Pie de pagina-->
+    <footer class="pie_pagina">
+
+        <div class="container">
+            
+            <div class="padding-social"><img class="img-social" src="img/skype.png" height="120" width="220" alt=" imagen de Skype">
+                <p>Skype: Marcela04 <br></p>
+            </div>
+            
+            <div class="padding-social"><img class="img-social" src="img/gmail.png" height="120" width="120" alt=" imagen de Email">
+                <p>Email: <a href="mailto:mmtoroz@unadvirtual.edu.co">mmtoroz@unadvirtual.edu.co</a> <br></p>
+            </div>
+           
+            <div class="padding-social"><img class="img-social" src="img/calendario.png" height="120" width="220" alt=" imagen de calendario">
+                <p>Fecha: 27 de noviembre del 2022 <br></p>
+            </div> 
+            
+        </div>
+
+    </footer>
+</body>
+</html>
